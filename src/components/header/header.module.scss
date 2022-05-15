@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.header-container {
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e4e5;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.3s;
+  border-bottom: 1px solid lightgray;
+  width: calc(100% - 200px);
+  background-color: #0d1117c5;
+}
+
+.header-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  line-height: 26px;
+  color: #f9f927;
+}

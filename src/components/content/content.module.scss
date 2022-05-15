@@ -1,0 +1,9 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: calc(100% - 60px);
+  margin-top: 60px;
+}

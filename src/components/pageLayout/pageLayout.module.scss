@@ -1,0 +1,10 @@
+.page-layout {
+  display: flex;
+  
+  &__body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    flex-grow: 1;
+  }
+}
