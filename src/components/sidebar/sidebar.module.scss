@@ -25,10 +25,19 @@
     margin-left: 40px;
     overflow-x: hidden;
     text-decoration: none;
+    border-radius: 60px;
 
     .logo-icon {
       flex-shrink: 0;
       border-radius: 60px;
     }
   }
+}
+
+.option-margin {
+  margin: 5px 0px;
+}
+
+.options{
+  margin-top: 20px;
 }

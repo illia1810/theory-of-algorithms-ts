@@ -1,0 +1,72 @@
+$yellow: #feda00;
+$gray: #888d92;
+
+.wrapper-for-tooltip {
+  width: 100%;
+  max-height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: -10px -10px;
+  border-radius: 5px;
+
+  &__selected {
+    background-color: #fafafa;
+  }
+
+  .option-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow-x: hidden;
+    text-decoration: none;
+
+    &__with-custom-icon {
+      padding: 5px;
+    }
+
+    .option-body {
+      display: flex;
+      align-items: center;
+      width: 180px;
+
+      .option-icon {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+
+        .show-by-default {
+          display: block;
+        }
+
+        .hide-by-default {
+          display: none;
+        }
+      }
+
+      .custom-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+
+      .option-text {
+        flex-shrink: 0;
+        white-space: nowrap;
+        color: #fafafa;
+        margin-left: 12px;
+        
+      &__selected {
+        color: $gray;
+        margin-left: 0;
+      }
+      }
+    }
+
+    &__selected {
+      background-color: #fafafa;
+    }
+  }
+}

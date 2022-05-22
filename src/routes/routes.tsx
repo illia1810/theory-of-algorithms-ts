@@ -1,5 +1,5 @@
 import React from "react";
-import { MainPage, MachineTuring } from "../pages";
+import { MainPage, MachineTuring, BasicConcepts, MNR } from "../pages";
 
 export interface IRoute {
   path: string;
@@ -16,9 +16,21 @@ export const ROUTES: IRoute[] = [
     title: 'Теорія алгоритмів',
   },
   {
-    path: '/first',
-    id: 'first',
+    path: '/turingMachine',
+    id: 'turing-machine',
     component: <MachineTuring />,
     title: 'Машина Тюрінга',
+  },
+  {
+    path: '/basicConcepts',
+    id: 'basic-concepts',
+    component: <BasicConcepts />,
+    title: 'Основні поняття',
+  },
+  {
+    path: '/mnrProgram',
+    id: 'mnr-program',
+    component: <MNR />,
+    title: 'МНР програма',
   },
 ];
