@@ -14,7 +14,15 @@ p {
   text-indent: 20px;
   line-height: 1.5;
 }
+.instruction {
+  text-indent: 0;
+  margin-left: 20px;
+}
 li {
   list-style-type: square;
   margin-top: 7px;
+}
+.video {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }

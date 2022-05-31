@@ -87,7 +87,7 @@ const MNR: React.FC = () => {
       </table>
       <p>Результат в клітинці R<sub>0</sub>, що відповідає 2+3=5</p>
       <div className={cx('button')}>
-        <a href="https://illia1810.github.io/MNR/" target="_blank" rel="noreferrer" className={cx('button__text')}>Візуалізація роботи</a>
+        <a href="https://illia1810.github.io/MNR/" target="_blank" rel="noreferrer" className={cx('button__text')}>Демонстрація роботи МНР програми</a>
       </div>
     </div>
   );

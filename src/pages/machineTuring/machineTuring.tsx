@@ -1,6 +1,8 @@
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./machineTuring.module.scss";
+import MTGif from "../../assets/video1.mp4";
+
 
 const cx = classNames.bind(styles);
 
@@ -22,6 +24,15 @@ const MachineTuring: React.FC = () => {
       &#40; 𝑆𝑖,𝑗 ,&#123;𝐿, 𝑅, 𝑁&#125;, 𝑞𝑖,𝑗&#41;, то коли стан Машини Тюрінга = 𝑞𝑖 і на вході число 𝑆𝑖, машина Т змінює 𝑆𝑖 на новий символ 𝑆𝑖,𝑗 та рухається у напрямку L/R/N, та переходить у новий стан 𝑞𝑖,𝑗</p>
       <p>Конфiгурацiя, або повний стан МТ – це слово вигляду xqy, де x, y&#8714;T*, q&#8714;Q. Неформально це означає, що на стрiчцi записане слово xy, тобто злiва i справа вiд xy можуть стояти тiльки символи 	&#955;, МТ
          знаходиться в станi q, голiвка читає 1-й символ пiдслова y. Конфiгурацiю вигляду q<sub>0</sub>x, де 1-й та останнiй символи слова x вiдмiннi вiд 	&#955;, назвемо початковою.  Конфiгурацiю вигляду xq*y назвемо фiнальною. </p>
+      <h4><b>Приклад. МТ для обчислення функції <i> x - y</i></b></h4>
+      <p className={cx('instruction')}>
+        q<sub>0</sub>|&#8594;q<sub>1</sub>&#955;<i>R</i> <br /> q<sub>1</sub>|&#8594;q<sub>1</sub>|<i>R</i> <br /> q<sub>1</sub>#&#8594;q<sub>1</sub>#<i>R</i> <br />
+        q<sub>1</sub>&#955;&#8594;q<sub>2</sub>&#955;<i>L</i> <br />  q<sub>2</sub>|&#8594;q<sub>3</sub>&#955;<i>L</i> <br /> q<sub>3</sub>|&#8594;q<sub>3</sub>|<i>L</i> <br />
+        q<sub>3</sub>#&#8594;q<sub>3</sub>#<i>L</i> <br /> q<sub>3</sub>&#955;&#8594;q<sub>0</sub>&#955;<i>R</i> <br /> q<sub>2</sub>#&#8594;q*| <br />
+        q<sub>0</sub>#&#8594;q<sub>4</sub>&#955;<i>R</i> <br /> q<sub>4</sub>&#955;&#8594;q*&#955;
+      </p>
+      <p>Демонстрація роботи МТ для функції x-y при <b>x=2, y=1</b></p>
+      <video src={MTGif} controls className={cx('video')}></video>
     </div>
   );
 };
