@@ -30,7 +30,7 @@ $gray: #888d92;
     .option-body {
       display: flex;
       align-items: center;
-      width: 180px;
+      width: 200px;
 
       .option-icon {
         flex-shrink: 0;
@@ -56,7 +56,7 @@ $gray: #888d92;
         flex-shrink: 0;
         white-space: nowrap;
         color: #fafafa;
-        margin-left: 12px;
+        margin-left: 24px;
         
       &__selected {
         color: $gray;

@@ -1,5 +1,5 @@
 import React from "react";
-import { MainPage, MachineTuring, BasicConcepts, MNR } from "../pages";
+import { MainPage, MachineTuring, BasicConcepts, MNR, NormalAlgorithms, SystemsOfPost } from "../pages";
 
 export interface IRoute {
   path: string;
@@ -32,5 +32,17 @@ export const ROUTES: IRoute[] = [
     id: 'mnr-program',
     component: <MNR />,
     title: 'МНР програма',
+  },
+  {
+    path: '/normalAlgorithms',
+    id: 'normal-algorithms',
+    component: <NormalAlgorithms />,
+    title: 'Нормальні алгоритми',
+  },
+  {
+    path: '/systemsOfPost',
+    id: 'systems-of-posts',
+    component: <SystemsOfPost />,
+    title: 'Системи Поста',
   },
 ];

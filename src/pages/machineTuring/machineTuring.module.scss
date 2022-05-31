@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+.container {
+  margin: 15px 20px 0 20px;
+  font-family: 'Commissioner', sans-serif;
+  font-size: 16px;
+
+  .headline {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+p {
+  text-indent: 20px;
+  line-height: 1.5;
+}
+li {
+  list-style-type: square;
+  margin-top: 7px;
+}

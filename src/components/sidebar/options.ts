@@ -2,16 +2,16 @@ import { IOption } from "./sidebarTypes";
 
 export const SIDEBAR_OPTIONS: Array<IOption> = [
   {
+    id: 'main',
+    redirectRoute: '/',
+    activeOnPathes: ['/'],
+    optionText: 'Головна',
+  },
+  {
     id: 'basic-concepts',
     redirectRoute: '/basicConcepts',
     activeOnPathes: ['/basicConcepts'],
     optionText: 'Основні поняття',
-  },
-  {
-    id: 'turing-machine',
-    redirectRoute: '/turingMachine',
-    activeOnPathes: ['/turingMachine'],
-    optionText: 'Машина Тюрінга',
   },
   {
     id: 'mnr-program',
@@ -20,9 +20,21 @@ export const SIDEBAR_OPTIONS: Array<IOption> = [
     optionText: 'МНР програма',
   },
   {
-    id: 'main',
-    redirectRoute: '/',
-    activeOnPathes: ['/'],
-    optionText: 'Головна',
+    id: 'turing-machine',
+    redirectRoute: '/turingMachine',
+    activeOnPathes: ['/turingMachine'],
+    optionText: 'Машина Тюрінга',
+  },
+  {
+    id: 'normal-algorithms',
+    redirectRoute: '/normalAlgorithms',
+    activeOnPathes: ['/normalAlgorithms'],
+    optionText: 'Нормальні алгоритми',
+  },
+  {
+    id: 'systems-of-posts',
+    redirectRoute: '/systemsOfPost',
+    activeOnPathes: ['/systemsOfPost'],
+    optionText: 'Системи Поста',
   },
 ];
